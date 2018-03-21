@@ -1,0 +1,60 @@
+body{
+    background: #EEE;
+}
+header{
+    position: fixed;
+    width:100%; /* this has to be set to 100% so it can occupy the whole space cos fixed makes the width to reduce*/
+    height:56px;
+}
+.navbar{
+    border-bottom: 1px solid #e7e7e7;
+}
+main{
+    padding-top: 56px;
+    height:100%;
+    position: relative;
+
+}
+.left-aside{
+    background: white;
+    width:250px;
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid #e7e7e7;
+
+}
+.main-section{
+    width: calc(100% - 250px); /* 250px is the width of the aside-left */
+    margin-left: auto;
+    padding:30px;
+}
+/* STYLING OF MENUS */
+
+ul.menus{
+    padding: 0;
+    margin:0;
+    list-style-type: none;
+    border-top: 1px solid #e7e7e7;
+
+} 
+.menus [class*='icon-']{
+    width:70px;  /*we can increase the width and the p tag will always adjust itself */
+    text-align: center;
+    align-self: center;
+    font-size: 20px;
+    padding:20px 0;
+    border-right:1px solid #e7e7e7
+
+
+}
+
+.menus p{
+    flex:1;
+    margin-bottom: 0;
+    align-self: center;
+    padding-left:15px;
+}
+
+.menus li{
+    border-bottom: 1px solid #e7e7e7;
+}
